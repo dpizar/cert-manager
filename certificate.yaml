@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: test-certificate
+  namespace: istio-system
+spec:
+  secretName: test-certificate
+  issuerRef:
+    name: letsencrypt-prod
+  commonName: diego.cloud-montreal.ca
+  dnsNames:
+  - diego.cloud-montreal.ca
