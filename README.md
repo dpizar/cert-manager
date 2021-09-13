@@ -30,7 +30,7 @@ export PATH=$PWD/bin:$PATH`
 `kubectl label ns hello istio-injection=enabled`
 
 ### 4. a Install 'hello' sample application for testing cert-manager. We will use this application to get a certificate
-'kubectl apply -n hello -f https://raw.githubusercontent.com/istio/istio/1.11.0/samples/helloworld/helloworld.yaml`
+'kubectl apply -n hello -f https://raw.githubusercontent.com/istio/istio/1.11.0/samples/helloworld/helloworld.yaml `
 
 
 ### cert-manager architecture
@@ -61,4 +61,4 @@ export PATH=$PWD/bin:$PATH`
 
 *Note: make sure traffic is allowed into your cluster, otherwise create a firewall. Example rule in this repo.
 ## 9. got to your domain and see if your website has the certificate  
-`e.g. https://diego.cloud-montreal.ca/hello`
+e.g. https://diego.cloud-montreal.ca/hello
